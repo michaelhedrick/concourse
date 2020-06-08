@@ -5,4 +5,4 @@
       - name: pr-source
         path: pr-source
     run:
-      path: pipeline/cpp-check.sh
+      path: pr-source/pipeline/cpp-check.sh
