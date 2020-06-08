@@ -1,4 +1,4 @@
-//div by zero
+//div by zerooo
 
 int main() {
   int x = 0;
