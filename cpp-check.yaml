@@ -5,4 +5,4 @@
       - name: source
         path: concourse
     run:
-      path: cpp-check.sh
+      path: concourse/cpp-check.sh
