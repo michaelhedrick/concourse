@@ -24,7 +24,7 @@ jobs:
           put: source
           resource: pr-source
           params:
-            path: concoures
+            path: concourse
             status: success
             context: cpp-check-pr
         on_failure:
