@@ -5,4 +5,4 @@
       - name: pr-source
         path: concourse
     run:
-      path: concourse/cpp-check.sh
+      path: pipeline/cpp-check.sh
