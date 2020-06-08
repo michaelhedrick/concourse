@@ -1,3 +1,5 @@
+//div by zero
+
 int main() {
   int x = 0;
   int y = 20;
