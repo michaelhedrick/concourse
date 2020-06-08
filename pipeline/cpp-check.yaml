@@ -3,6 +3,6 @@
     
     inputs:
       - name: pr-source
-        path: concourse
+        path: pr-source
     run:
       path: pipeline/cpp-check.sh
