@@ -2,26 +2,24 @@ resource_types:
   - name: pull-request
     type: docker-image
     source:
-      repository: jtarchie/pr
+      repository: teliaoss/github-pr-resource
 
 resources:
   - name: pr-source
     type: pull-request
     source:
-      repo: michaelhedrick/concourse
-      access-token: 9b9c31e4cc1c2a3ccfff613b8862f8fc9c4aea07
-      uri: https://github.com/michaelhedrick/concourse
+      repository: michaelhedrick/concourse
+      access_token: 694dd591ba34d3db741b626c2e784a045cb6ead9
 
 jobs:
   - name: cpp-check-pr
     plan:
-      - get: source
-        resource: pr-source
+      - get: pr-source
         trigger: true
       - task: run-cpp-check
-        file: cpp-check.yaml
+        file: cpp-check.sh
         on_success:
-          put: source
+          put: pr-source
           resource: pr-source
           params:
             path: concourse
