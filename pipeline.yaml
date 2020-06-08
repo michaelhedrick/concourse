@@ -24,14 +24,14 @@ jobs:
           put: source
           resource: pr-source
           params:
-            path: source
+            path: concoures
             status: success
             context: cpp-check-pr
         on_failure:
           put: source
           resource: pr-source
           params:
-            path: source
+            path: concourse
             status: failure
             context: cpp-check-pr
 
