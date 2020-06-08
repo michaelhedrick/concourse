@@ -2,7 +2,7 @@
     platform: linux
     
     inputs:
-      - name: source
+      - name: pr-source
         path: concourse
     run:
-      path: concourse/cpp-check.sh
+      path: cpp-check.sh
